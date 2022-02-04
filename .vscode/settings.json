@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "69.64.52.32",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "HelpmeDesk",
+            "database": "chatwoot_production",
+            "username": "chatwoot",
+            "password": "HtT5Z9wya5oW7sR"
+        }
+    ]
+}

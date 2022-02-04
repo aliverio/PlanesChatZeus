@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ApiChatZeusController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('detalle-cuenta-plan',[ApiChatZeusController::class, 'DetalleCuentaPlan']);
+Route::get('permiso-cuenta-canal',[ApiChatZeusController::class, 'PermisoCuentaCanal']);
+Route::get('permiso-agregar-agente',[ApiChatZeusController::class, 'PermisoAgregarAgente']);
+Route::get('permiso-canal',[ApiChatZeusController::class, 'PermisoCanal']);
+Route::get('verifica-licencia',[ApiChatZeusController::class, 'VerificaLicencia']);
+

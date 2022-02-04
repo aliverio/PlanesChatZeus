@@ -21,37 +21,31 @@
                 </div>
 
                 <div class="card-body">
-                    @include('livewire.cuentas.create')
-                    @include('livewire.cuentas.update')
                     <div class="table-responsive">
                         <table class="table table-bordered table-sm">
                             <thead class="thead">
                                 <tr>
                                     <td class="text-center">#</td>
+                                    <th class="text-center">Código</th>
                                     <th class="text-center">Descripcion</th>
-                                    <th class="text-center">Licenciamiento</th>
-                                    <th class="text-center">Fecha Incio</th>
-                                    <th class="text-center">Fecha Vencimiento</th>
-                                    <th class="text-center" class="text-center">Limite Usarios</th>
+                                    <th class="text-center">Cantidad Dias</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($cuentas as $row)
+                                @foreach($periodos as $row)
                                 <tr>
                                     <td class="align-middle text-right">
-                                        {{ $row->cuenta_chatzeus_id }}</td>
+                                        {{ $row->licencia_periodo_id }}</td>
                                     <td class="align-middle">
                                         <a data-toggle="modal" data-target="#updateModal" 
                                             class="btn btn-light mx-2"
-                                            wire:click="edit({{$row->cuenta_id}})">
+                                            wire:click="edit({{$row->licencia_periodo_id}})">
                                             <i class="fa fa-edit text-primary"></i>
                                         </a>    
-                                        {{ $row->name }}
+                                        {{ $row->codigo }}
                                     </td>
                                     <td class="align-middle">{{ $row->descripcion }}</td>
-                                    <td class="align-middle text-center">{{ $row->fecha_inicio }}</td>
-                                    <td class="align-middle text-center">{{ $row->fecha_vencimiento }}</td>
-                                    <td class="align-middle text-right">{{ $row->limite_usuarios }}</td>
+                                    <td class="align-middle text-center">{{ $row->cantidad_dias }}</td>
                                 </tr>
                                 @endforeach
                             </tbody>

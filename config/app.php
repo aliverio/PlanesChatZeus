@@ -1,7 +1,7 @@
 <?php
 
 return [
-
+    'token_app_chatzeus' => env('TOKEN_APP_CHATZEUS', '1071f06763c94e29ba492531db648425'),
     /*
     |--------------------------------------------------------------------------
     | Application Name

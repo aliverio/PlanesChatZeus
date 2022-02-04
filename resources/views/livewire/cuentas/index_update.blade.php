@@ -7,7 +7,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             {{-- Controlador Livewire --}}
-            @livewire('cuentas.cuentas') 
+            {{-- @livewire('cuentas.cuenta', ['id' => 10]) --}}
         </div>     
     </div>   
 </div>

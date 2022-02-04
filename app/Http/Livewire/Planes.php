@@ -4,8 +4,8 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use Livewire\WithPagination;
-use App\Models\PlanLicenciamiento_;
 use Illuminate\Support\Facades\DB;
+use App\Models\Planlicenciamiento_;
 
 class Planes extends Component
 {
@@ -18,7 +18,7 @@ class Planes extends Component
     public function render()
     {
 		$filtro = '%'.$this->filtro .'%';
-        $this->planes = PlanLicenciamiento_::orderBy('plan_licenciamiento_id', 'asc')
+        $this->planes = Planlicenciamiento_::orderBy('plan_licenciamiento_id', 'asc')
                 ->orWhere('descripcion', 'LIKE', $filtro)    
                 ->get();
         return view('livewire.planes.view', [

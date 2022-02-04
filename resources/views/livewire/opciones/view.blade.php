@@ -1,13 +1,13 @@
 @section('title', __('Catalogo de Opciones'))
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-8">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header card-header-zeus">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
                         <div>
                             <input wire:model='filtro' type="text" class="form-control" name="search" id="search"
-                                placeholder="Buscar">
+                                autocomplete="off" placeholder="Buscar">
                         </div>    
                         <div class="float-center">
                             <h4>Configuraciones de ChatZeus</h4>
@@ -50,7 +50,7 @@
                                         </a>
                                     </td>
                                     <td class="align-middle text-center">
-                                        {{ $row->clave }}
+                                        {{ strtoupper(substr($row->clave, 0, 8)) }}
                                     </td>
                                     @endforeach
                             </tbody>

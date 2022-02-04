@@ -5,8 +5,8 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\PlanOpcionLiga_;
-use App\Models\PlanLicenciamiento_;
 use Illuminate\Support\Facades\DB;
+use App\Models\Planlicenciamiento_;
 
 class Planesopciones extends Component
 {
@@ -38,7 +38,7 @@ class Planesopciones extends Component
     }
 
     private function getPlenes() {
-        $this->planes = PlanLicenciamiento_::orderBy('plan_licenciamiento_id', 'asc')->get();
+        $this->planes = Planlicenciamiento_::orderBy('plan_licenciamiento_id', 'asc')->get();
     }
 
     public function setActivar($plan_opcion_id) {

@@ -1,0 +1,264 @@
+:root {
+    --btn-outline-zeus-color    : #993dbb;
+}
+
+.color-zeus {
+    color : var(--btn-outline-zeus-color);
+}
+body {
+    background-color: #d3d3d3;
+}
+
+.size50 {
+    font-size: 50px;
+}
+
+.size46 {
+    font-size: 46px;
+}
+
+.size40 {
+    font-size: 40px;
+}
+
+.size36 {
+    font-size: 36px;
+}
+
+.size30 {
+    font-size: 30px;
+}
+
+.size28 {
+    font-size: 28px;
+}
+
+.size20 {
+    font-size: 20px;
+}
+
+.size18 {
+    font-size: 18px;
+}
+
+.btn-50 {
+    height: 52px;
+    width: 52px;
+}
+
+.btn-40 {
+    height: 42px;
+    width: 42px;
+}
+
+.btn-30 {
+    height: 32px;
+    width: 32px;
+}
+
+.p6x {
+    padding: 6px;
+}
+
+.p10x {
+    padding: 10px;
+}
+
+.p12x {
+    padding: 12px;
+}
+
+.pb16x {
+    padding-bottom: 16px;
+}
+
+.card-shadow {
+    -webkit-box-shadow: 7px 7px 24px -5px #a297aa;
+    box-shadow: 7px 7px 24px -5px #a297aa;
+}
+
+.has-icon {
+    margin-bottom: 0px;
+}
+
+.has-icon .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-icon>input {
+    background-color: #ffffff;
+    border-color: rgb(217, 217, 217);
+    color: #303030;
+}
+
+.has-icon>input:focus {
+    background-color: #ffffff;
+    border-color: rgb(217, 217, 217);
+    color: #303030;
+}
+
+.has-icon .form-control-feedback-required {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #c58e8e;
+}
+
+.has-icon .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #993dbb;
+}
+
+.table-hover td {
+    vertical-align: middle;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.table-hover img {
+    border-radius: 50%;
+}
+
+.table-hover th {
+    height: 50px;
+    vertical-align: middle;
+    padding-bottom: 12px;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    /*border-color: #80bdff;*/
+    border-color: #808083;
+    outline: 0;
+    /*box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(217, 217, 217, 0.5);*/
+    box-shadow: 0 0 0 0.2rem rgba(153, 61, 187, 0.2);
+}
+.custom-select:focus {
+    /*border-color: #80bdff;*/
+    border-color: #808083;
+    outline: 0;
+     /*box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+     box-shadow: 0 0 0 0.2rem rgba(217, 217, 217, 0.5);*/
+     box-shadow: 0 0 0 0.2rem rgba(153, 61, 187, 0.2);
+  }
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.5rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+label {
+    font-size: 0.95rem;
+}
+
+.card-header-zeus{
+    background-color: #f2f3f7;
+}
+
+
+/* Personalización de Botón */
+ .btn-outline-zeus {
+    color: var(--btn-outline-zeus-color);
+    border-color: var(--btn-outline-zeus-color);
+  }
+  
+  .btn-outline-zeus:hover {
+    color: #fff;
+    background-color: var(--btn-outline-zeus-color);
+    border-color: var(--btn-outline-zeus-color);
+  }
+  
+  .btn-outline-zeus:focus,
+  .btn-outline-zeus.focus {
+    box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+  }
+  
+  .btn-outline-zeus.disabled,
+  .btn-outline-zeus:disabled {
+    color: var(--btn-outline-zeus-color);
+    background-color: transparent;
+  }
+  
+  .btn-outline-zeus:not(:disabled):not(.disabled):active,
+  .btn-outline-zeus:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-zeus.dropdown-toggle {
+    color: #fff;
+    background-color: var(--btn-outline-zeus-color);
+    border-color: var(--btn-outline-zeus-color);
+  }
+  
+  .btn-outline-zeus:not(:disabled):not(.disabled):active:focus,
+  .btn-outline-zeus:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-outline-zeus.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+  }
+  
+
+
+  .page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: var(--btn-outline-zeus-color);
+    border-color: var(--btn-outline-zeus-color);
+  }
+  
+  .page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+  }
+
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #6c757d;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+  }
+  
+  .page-link:hover {
+    z-index: 2;
+    color: #6c757d;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+  }
+  
+  .page-link:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem var(--btn-outline-zeus-color);
+  }
+  
+  
+  
